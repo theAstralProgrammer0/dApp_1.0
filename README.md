@@ -22,9 +22,10 @@ dApp runs on a blockchain network.
 
 ### What're Smart Contracts?
 
-A smart contract is a program written in Solidity. It is the code which spells
+A smart contract is a program written in Solidity which spells
 out the backend logic (or business logic) of the decentralized application.
-Essentially, it's the driving mechanism of how the dApp operates and influences the frontend.
+Essentially, it's the driving mechanism of how the dApp operates and influences
+the frontend.
 
 ### Blockchain
 
