@@ -49,14 +49,14 @@ using what is called a ``Cryptographic Wallet`` made available by applications
 like Metamask. Wallet vendors like Coinbase or Metamask provide a user with 4
 credentials to ensure ``Confidentiality``, ``Integrity``, and ``Authentication``.
 
-- Wallet Address: This is a 24-bit hexadecimal number used to identify a
+- **Wallet Address:** This is a 24-bit hexadecimal number used to identify a
 particular wallet on the network
-- Public Key: One half of a cryptographic key-pair which can be shared with
+- **Public Key:** One half of a cryptographic key-pair which can be shared with
 peers or 3rd party apps or dApps for authorization purposes.
-- Private Key: The other more secret half of a cryptographic key-pair which
+- **Private Key:** The other more secret half of a cryptographic key-pair which
 (as the name suggests) must be kept privately as it is the only other key that
 can validate the identity of any user.
-- 12 word phrase: As a backdoor for the user to retrieve their wallet in the
+- **12 word phrase:** As a backdoor for the user to retrieve their wallet in the
 event of loss of passwords or passkeys, a mnemonic set of a dozen words are
 also provided as a sort of manual override to signify ownership of any wallet.
 This 12 word phrase usually does not make grammatical sense but is meant for
