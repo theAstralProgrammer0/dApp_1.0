@@ -1,0 +1,20 @@
+{
+  "name": "dapp_1.0",
+  "version": "1.0.0",
+  "description": "## Understanding What A dApp Is",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "hardhat": "^2.22.17"
+  },
+  "dependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "dotenv": "^16.4.7",
+    "ethers": "^5.7.2"
+  }
+}
