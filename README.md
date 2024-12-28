@@ -121,4 +121,7 @@ exist primarily on the backend.
 - Solidity: For writing smart contracts.
 - Hardhat or Truffle: This will be our environment for deploying and testing
 our dApp's functionalities.
-- Metamask: This will be our client-facing app which can interact with the blockchain. As we know, we need  
+- Metamask: This will be our client-facing app which can interact with the blockchain.
+- Next.js: Frontend framework for building dApp UI.
+- Infura or Alchemy: For connecting our frontend to the Ethereum network
+without us creating our own node.
