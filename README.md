@@ -20,7 +20,7 @@ dApp runs on a blockchain network.
 - Blockchain
 - Frontend
 
-### What're Smart Contracts?
+### Smart Contracts
 
 A smart contract is a program written in Solidity which spells
 out the backend logic (or business logic) of the decentralized application.
@@ -44,19 +44,45 @@ incentives for maintaining the core network and for every hash they are able to
 solve, additional percentages are added to their transaction block as reward for
 their network being a core.  
 
-When a transaction is to be made on the bitcoin blockchain network, the entire
-network becomes aware of this transaction. Because the hash of the last block
-in the network was generated from the hash of the previous block, the integrity
-of the entire network remains pristine as no new block can be added without the
-involvement of the hash from the previous blocks, all the way to the Genesis block.  
+Every user on the web3 infrastructure can only interact with the blockchain
+using what is called a ``Cryptographic Wallet`` made available by applications
+like Metamask. Wallet vendors like Coinbase or Metamask provide a user with 4
+credentials to ensure ``Confidentiality``, ``Integrity``, and ``Authentication``.
 
-Hashes are generated using RSA key-pair cryptography where every user (or
-account) has a pair of cryptographic keys known as a public-private key
-pair. When there is to be a transaction between 2 users, the 2 users'
-public-private key pairs are used in facilitating this transaction. These key
-pairs are used in conjuction with the hash from the previous block to generated
-something called a ``Transaction Hash`` which is the hash of the newly formed
-block. Once this transaction hash is generated, it cannot be "un-generated",
+- Wallet Address: This is a 24-bit hexadecimal number used to identify a
+particular wallet on the network
+- Public Key: One half of a cryptographic key-pair which can be shared with
+peers or 3rd party apps or dApps for authorization purposes.
+- Private Key: The other more secret half of a cryptographic key-pair which
+(as the name suggests) must be kept privately as it is the only other key that
+can validate the identity of any user.
+- 12 word phrase: As a backdoor for the user to retrieve their wallet in the
+event of loss of passwords or passkeys, a mnemonic set of a dozen words are
+also provided as a sort of manual override to signify ownership of any wallet.
+This 12 word phrase usually does not make grammatical sense but is meant for
+the purpose of protecting wallet owners from outright loss of their wallets
+which could be the case if the user does not have the password to their
+account. It should be kept safe and hidden from prying eyes to avoid theft of
+wallet contents.
+
+When a transaction is to be made on the bitcoin blockchain network, the entire
+network becomes aware of this transaction. Due to the fact that the hash of the
+last block in the network was generated from the hash of the previous block,
+the integrity of the entire network remains pristine as no new block can be 
+added without the involvement of the hash from the previous blocks, all the way
+to the Genesis block.  
+
+When there is to be a transaction between 2 peers in the network, the 2 peers' 
+RSA cryptographic key-pair play salient roles in facilitating the transaction.
+
+The public parts of the key-pairs are used in conjunction with something called 
+a ``Transaction Hash`` which is the hash-key of any newly generated block. At the 
+Genesis block, the transaction hash is manually created by the creator of the 
+blockchain network. For new blocks being added to the chain, novel transaction
+hashes are generated using the transaction hash of the previous block, the
+wallet address of both the sender and receiver of a commodity (such as bitcoins
+or NFTs), and the public RSA cryptographic keys of both the sender and receiver.  
+Once this transaction hash is generated, it cannot be "un-generated",
 hence the immutability of the data blocks in a blockchain network.  
 
 The most popular blockchain network is the Ethereum blockchain network. The
@@ -90,6 +116,9 @@ optimization (SEO) is also achieved because search engines can easily crawl
 through fully formed HTML webpages on the server-side as search engine elements
 exist primarily on the backend.  
 
- 
+## Tools We Will Use 
 
-
+- Solidity: For writing smart contracts.
+- Hardhat or Truffle: This will be our environment for deploying and testing
+our dApp's functionalities.
+- Metamask: This will be our client-facing app which can interact with the blockchain. As we know, we need  
