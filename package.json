@@ -10,11 +10,15 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "hardhat": "^2.22.17"
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.8",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@typechain/hardhat": "^9.1.0",
+    "chai": "^5.1.2",
+    "hardhat": "^2.22.17",
+    "typechain": "^8.3.2"
   },
   "dependencies": {
-    "@nomiclabs/hardhat-ethers": "^2.2.3",
     "dotenv": "^16.4.7",
-    "ethers": "^5.7.2"
+    "ethers": "^6.13.4"
   }
 }
